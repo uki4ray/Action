@@ -20,8 +20,8 @@ from urllib3.util import Retry
 # 通知服务
 BARK = ''                                                                 # bark服务,自行搜索; secrets可填;
 SCKEY = ''                                                                # Server酱的SCKEY; secrets可填
-TG_BOT_TOKEN = '1407203283:AAG9rt-6RDaaX0HBLZQq0laNOh898iFYaRQ'                                                         # tg机器人的TG_BOT_TOKEN; secrets可填
-TG_USER_ID = '1434078534'                                                           # tg机器人的TG_USER_ID; secrets可填
+TG_BOT_TOKEN = ''                                                         # tg机器人的TG_BOT_TOKEN; secrets可填1407203283:AAG9rt-6RDaaX0HBLZQq0laNOh898iFYaRQ
+TG_USER_ID = ''                                                           # tg机器人的TG_USER_ID; secrets可填 1434078534
 TG_PROXY_IP = ''                                                          # tg机器人的TG_PROXY_IP; secrets可填
 TG_PROXY_PORT = ''                                                        # tg机器人的TG_PROXY_PORT; secrets可填
 DD_BOT_ACCESS_TOKEN = '8efb4656e6c7b8a4b48038065e14d8758e40feccb1128e36f512e82f484ca6b9'                                                  # 钉钉机器人的DD_BOT_ACCESS_TOKEN; secrets可填
