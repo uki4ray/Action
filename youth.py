@@ -14,6 +14,8 @@ from datetime import datetime, timezone, timedelta
 
 # YOUTH_HEADER 为对象, 其他参数为字符串，自动提现需要自己抓包
 # 选择微信提现30元，立即兑换，在请求包中找到withdraw2的请求，拷贝请求body类型 p=****** 的字符串，放入下面对应参数即可
+# YOUTH_HEADER 为对象, 其他参数为字符串，自动提现需要自己抓包
+# 选择微信提现30元，立即兑换，在请求包中找到withdraw2的请求，拷贝请求body类型 p=****** 的字符串，放入下面对应参数即可
 #cookies1 = {
 #  'YOUTH_HEADER': {"Cookie":"sensorsdata2019jssdkcross=%7B%22distinct_id%22%3A%2252049058%22%2C%22%24device_id%22%3A%221764652f0e02f-059827c77e2824-734c1551-304704-1764652f0e1787%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%7D%2C%22first_id%22%3A%221764652f0e02f-059827c77e2824-734c1551-304704-1764652f0e1787%22%7D; Hm_lvt_268f0a31fc0d047e5253dd69ad3a4775=1607497609,1607498515,1607509822,1607509848; Hm_lvt_6c30047a5b80400b0fd3f410638b8f0c=1607497678,1607509840","Accept":"*/*","Accept-Encoding":"br, gzip, deflate","Referer":"https://kd.youth.cn/html/taskCenter/index.html?uuid=63a44575e1a609a993f3a45d969463a3&sign=1bbb953227f309c1728cfd9aec64ceaa&channel_code=80000000&uid=52049058&channel=80000000&access=WIfI&app_version=1.8.0&device_platform=iphone&cookie_id=4fbc6df71ef5a4419007d522e7978b67&openudid=63a44575e1a609a993f3a45d969463a3&device_type=1&device_brand=iphone&sm_device_id=202012091505488954d08752814dc76ad09d5d960a125e0138d58c38909dc6&device_id=48833035&version_code=180&os_version=12.2&cookie=MDAwMDAwMDAwMJCMpN-w09Wtg5-Bb36eh6CPqHualIejl66bpWKyt3Vqhnyp4LDPyGl9onqkj3ZqYJa8Y898najWsJupZLCnl2mGjJiXr8-uapqGcXY&device_model=iPhone_6_Plus&subv=1.5.1&&cookie=MDAwMDAwMDAwMJCMpN-w09Wtg5-Bb36eh6CPqHualIejl66bpWKyt3Vqhnyp4LDPyGl9onqkj3ZqYJa8Y898najWsJupZLCnl2mGjJiXr8-uapqGcXY&cookie_id=4fbc6df71ef5a4419007d522e7978b67","Connection":"keep-alive","Host":"kd.youth.cn","User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148","Content-Length":"0","Accept-Language":"zh-cn","X-Requested-With":"XMLHttpRequest"},
 #  'YOUTH_READBODY': 'p=9NwGV8Ov71o%3DgW5NEpb6rjb84bkaCQyOq-myT0C-Ktb_nHSVk1s5Pk1lOQlYKzDUPU9y0FiOH2nIRqKp1NEljKT7rNHR8sm-zNM1uYF037ZLhJ3Xl0xswFUmY-cQ_hr0wixkQsFjVI3HBBKV9Vi7Arv9ucr9IYetIj9Zqs0mPLwQax27ryeUONkX-X3wt0uoM_8p9aCCWnT7B6DxIq_aMu1lIWm3-nbTMZwvIy9WHTVQAxhRcXP3wQsUVL_fiFGav0GTztg5LUsxA3vXsguFVktveW9i_myL2o4VfXQetIZKPEpAi5MUQcwait1gR_-tERUucxWg7c3GE1F8xf3taMDezfHHJU5M5T4cmDKKLQUSDFk6vZUFv9jWsEMbQYATXSh9XVVuHyjbMUP98uAwlV8yn-PgEeKj2QXQENu38MbV1D9hC_Zldwgh07Fel-CgRxqUICq204XjqAe8CyLgMzY7OhcbwC36mzYbKBsvX3mW279AcEkeTwZq9aVPLieAAHgxlkQBohGxPTrTtrFl8V14bGmXpP0NAsVMZzQjnnEfhJ_rVzEqP3RFa1iuolE2ZYDOkfYUkaXizU2--tS9fh8mk1zqWJnfMnqe7w1tUtaTvF01KoOQiVTfks1fHr6acOnBRxqvq4aZenVRBOjr3d2ekhjXpT-3SjVUpOl-OPM2J3VS15ww19NmkBUhhwXMDu1oxdtSKMqZ97W0EU-mc7CCHa2gXhzYTSIrEgSoRTuUFDWBfDIIcdwA0mvNRwjGfd2KPWqkXUAd7R5j7r3RRyR3424MpXjXe04GfgAToMX9EYwaQOq6XA2XyF7wxww9FDfknuqwRl1n38iadal8Y_o6OhAXR_Xa7A%3D%3D',
@@ -28,7 +30,6 @@ cookies1 = {
    'YOUTH_READTIMEBODY': 'p=9NwGV8Ov71o%3DGvDnjwMsu_ld4qx0YVkhCGk95BHaDHeU0mv6uDOh2O2ipjZo6NoleOFP3uDtc3FQBSvTz00HRezP6M12PoS3qF-BqoAYx72wrrh28EnIkoBp3K3HFMp8mGIU-nrSkrPPyPbKpQkemAHzLlKKlkAaBWqC4RjH3j6kZtSfkhgkCbUbXcfrn7oIQ7IQBBYaZdf_rs9sHVL5u5tHCXqnIteXU7_9ELcnO6p6aWuQbujag6qtaK8usbCFqOzuNM4nBHXnbrMgga0Fb3_lZh4y5t6Qmn-P2q8vjE3yFQlbqzvgtyGAeR1oWQ_wFyC1LU4tXtkM2MvP6n2HpObQDE4KpBJnMXQEBHuF16P4rSrvupXvL7-Thi7ShB4rol2kQE4STDhsIEIWc1x-NhZeU0Bx-mpm4A0jXSGjr7NmklWLS6vUTp4BQRKNHpvOeEt3m_sv5iVL7ca65ezG3q3HjHcC78sXHPc36Mkr5-f3GiTQcA37FCMiluwJh2wJRWP5aKHLGpAnJVviSCOiHV9Nn9WXJ2s7tkdIRaHSUjD3AiYmTxEuEw3Jy9a-nOl41HSqI6KmOCUsIuH0VVcJSVvO2pe7OjLxxvVDTXkCSNOYtJ36XhWEtoil_3tYuUw16L_oBrD3_Kl5fOQQjw7obHSZDtKrWF2pmQcjRTRfGphR6JMhFD93no3xs6RH1fwhv2qFpwsMoYmq6pqQV4zEz-1PuCAsgtI4_Oac8UyDa9XbyiFXV_h_Tz2mDcoumZMB8TJ9lMLpN1s4-QhRksv-r-YUNEgkWnUb2wjreTVa2BLZUExBd5oqlwhxiA4cX4wXbsRxqjWdFrFZ',
    'YOUTH_WITHDRAWBODY': ''
 }
-
 
 
 COOKIELIST = [cookies1,]  # 多账号准备
@@ -199,23 +200,72 @@ def luckDraw(headers):
     print(traceback.format_exc())
     return
 
+def timePacket(headers):
+  """
+  计时红包
+  :param headers:
+  :return:
+  """
+  time.sleep(0.3)
+  url = f'{YOUTH_HOST}TimePacket/getReward'
+  try:
+    response = requests_session().post(url=url, data=f'{headers["Referer"].split("?")[1]}', headers=headers, timeout=30).json()
+    print('计时红包')
+    print(response)
+    return
+  except:
+    print(traceback.format_exc())
+    return
+
+def watchWelfareVideo(headers):
+  """
+  观看福利视频
+  :param headers:
+  :return:
+  """
+  time.sleep(0.3)
+  url = f'{YOUTH_HOST}NewTaskIos/recordNum?{headers["Referer"].split("?")[1]}'
+  try:
+    response = requests_session().get(url=url, headers=headers, timeout=30).json()
+    print('观看福利视频')
+    print(response)
+    return
+  except:
+    print(traceback.format_exc())
+    return
+
 def shareArticle(headers):
   """
   分享文章
   :param headers:
   :return:
   """
-  time.sleep(0.3)
-  url = 'https://focu.youth.cn/article/s?signature=QqvZWbEKpA2yrNR1MnyjPetpZpz2TLdDDw849VGjJl8gXB5keP&uid=52242968&phone_code=4aa0b274198dafebe5c214ea6097d12b&scid=35438728&time=1609414747&app_version=1.8.2&sign=17fe0351fa6378a602c2afd55d6a47c8'
-  readUrl = 'https://focus.youth.cn/article/s?signature=QqvZWbEKpA2yrNR1MnyjPetpZpz2TLdDDw849VGjJl8gXB5keP&uid=52242968&phone_code=4aa0b274198dafebe5c214ea6097d12b&scid=35438728&time=1609414747&app_version=1.8.2&sign=17fe0351fa6378a602c2afd55d6a47c8'
+  url = 'https://ios.baertt.com/v2/article/share/put.json'
+  headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8'
+  body = 'article_id=36240926&channel=80000000&channel_code=80000000&cid=80000000&client_version=1.8.2&device_brand=iphone&device_id=49068313&device_model=iPhone&device_platform=iphone&device_type=iphone&from=7&is_hot=0&isnew=1&mobile_type=2&net_type=1&openudid=c18a9d1f15212eebb9b8dc4c2adcc563&os_version=14.3&phone_code=c18a9d1f15212eebb9b8dc4c2adcc563&phone_network=WIFI&platform=3&request_time=1612771954&resolution=750x1334&sign=67399e61370b3fa383a34ae8025d21cb&sm_device_id=202012191748479a7e5e957ab8f5f116ea95b19fd9120d012db4c3f2b435be&stype=WEIXIN&szlm_ddid=D2U6jGsDnrrijvOmzrEwZMyw/D7WvldETrECXmh7wlq7AXd0&time=1612771954&uid=52289573&uuid=c18a9d1f15212eebb9b8dc4c2adcc563'
   try:
-    response1 = requests_session().post(url=url, headers=headers, timeout=30)
-    print('分享文章1')
-    print(response1)
-    time.sleep(0.3)
-    response2 = requests_session().post(url=readUrl, headers=headers, timeout=30)
-    print('分享文章2')
-    print(response2)
+    response = requests_session().post(url=url, data=body, headers=headers, timeout=30).json()
+    print('分享文章')
+    print(response)
+    return
+  except:
+    print(traceback.format_exc())
+    return
+
+def threeShare(headers, action):
+  """
+  三餐分享
+  :param headers:
+  :return:
+  """
+  time.sleep(0.3)
+  url = f'{YOUTH_HOST}ShareNew/execExtractTask'
+  headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8'
+  body = f'{headers["Referer"].split("?")[1]}&action={action}'
+  try:
+    response = requests_session().post(url=url, data=body, headers=headers, timeout=30).json()
+    print('三餐分享')
+    print(response)
     return
   except:
     print(traceback.format_exc())
@@ -635,6 +685,9 @@ def run():
     if visit_reward_res:
       content += f'\n【回访奖励】：+{visit_reward_res["score"]}青豆'
     shareArticle(headers=headers)
+    for action in ['beread_extra_reward_one', 'beread_extra_reward_two', 'beread_extra_reward_three']:
+      time.sleep(5)
+      threeShare(headers=headers, action=action)
     open_box_res = openBox(headers=headers)
     if open_box_res:
       content += f'\n【开启宝箱】：+{open_box_res["score"]}青豆 下次奖励{open_box_res["time"] / 60}分钟'
@@ -668,7 +721,10 @@ def run():
               content += f'\n【转盘双倍】：+{double_rotary_res["score"]}青豆 剩余{double_rotary_res["doubleNum"]}次'
 
     rotaryChestReward(headers=headers, body=rotaryBody)
-    for action in ['watch_article_reward', 'watch_video_reward', 'read_time_two_minutes', 'read_time_sixty_minutes', 'new_fresh_five_video_reward']:
+    for i in range(5):
+      watchWelfareVideo(headers=headers)
+    timePacket(headers=headers)
+    for action in ['watch_article_reward', 'watch_video_reward', 'read_time_two_minutes', 'read_time_sixty_minutes', 'new_fresh_five_video_reward', 'first_share_article']:
       time.sleep(5)
       sendTwentyScore(headers=headers, action=action)
     stat_res = incomeStat(headers=headers)
